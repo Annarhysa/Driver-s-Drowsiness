@@ -94,6 +94,9 @@ while(True):
             if COUNTER >= EYE_ASPECT_RATIO_CONSEC_FRAMES:
                 pygame.mixer.music.play(-1)
                 cv2.putText(frame, "You are Drowsy", (150,200), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,0,255), 2)
+            
+            else:
+                cv2.putText(frame, "You are awake :)", (150,200), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,0,255), 2)
                 
         else:
             pygame.mixer.music.stop()
